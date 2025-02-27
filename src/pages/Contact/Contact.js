@@ -5,6 +5,8 @@ import axios from "axios";
 import "./Contact.css";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
+const API_URL = process.env.REACT_APP_API_URL
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,7 +20,7 @@ const Contact = () => {
     }
     try {
       const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/v1/portfolio/sendEmail`,
+        `${API_URL}/api/v1/portfolio/sendEmail`,
         { name, email, msg }
       );
       
