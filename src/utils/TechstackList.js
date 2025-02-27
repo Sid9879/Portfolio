@@ -1,6 +1,4 @@
 import { BsFiletypeHtml, BsFiletypeCss, BsBootstrap } from "react-icons/bs";
-import { FaNodeJs } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
 import {
   SiJavascript,
   SiReact,
@@ -9,6 +7,8 @@ import {
   SiGithub,
   SiExpress,
 } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+
 export const TechstackList = [
   {
     _id: 1,
@@ -17,7 +17,7 @@ export const TechstackList = [
   },
   {
     _id: 2,
-    name: "CSS ",
+    name: "CSS",
     icon: BsFiletypeCss,
   },
   {
@@ -27,37 +27,37 @@ export const TechstackList = [
   },
   {
     _id: 4,
-    name: "Javascript",
+    name: "JavaScript",
     icon: SiJavascript,
   },
   {
     _id: 7,
-    name: "React JS",
+    name: "React.js",
     icon: SiReact,
   },
   {
     _id: 10,
-    name: "Tailwind ",
+    name: "Tailwind CSS",
     icon: SiTailwindcss,
   },
   {
     _id: 15,
-    name: "Node JS ",
+    name: "Node.js",
     icon: FaNodeJs,
   },
   {
     _id: 16,
-    name: "Express JS ",
+    name: "Express.js",
     icon: SiExpress,
   },
   {
     _id: 18,
-    name: "Mongodb ",
+    name: "MongoDB",
     icon: SiMongodb,
   },
   {
     _id: 21,
-    name: "Git / Github ",
+    name: "Git & GitHub",
     icon: SiGithub,
   },
 ];
