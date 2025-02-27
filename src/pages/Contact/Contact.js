@@ -5,7 +5,7 @@ import axios from "axios";
 import "./Contact.css";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
-const API_URL = process.env.REACT_APP_API_URL
+const API_URL = process.env.REACT_APP_API_URL || "https://portfolio-backend-1r39.onrender.com";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -15,6 +15,8 @@ const Contact = () => {
   // Handle submit button
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("API URL:", API_URL);
+
     if (!name || !email || !msg) {
       return toast.error("Please provide all fields");
     }
