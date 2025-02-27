@@ -5,7 +5,7 @@ import axios from "axios";
 import "./Contact.css";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
-const API_URL = process.env.REACT_APP_API_URL || "https://portfolio-backend-1r39.onrender.com";
+const API_URL = process.env.REACT_APP_API_URL ||"https://portfolio-backend-1r39.onrender.com";
 
 const Contact = () => {
   const [name, setName] = useState("");
