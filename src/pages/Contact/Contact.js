@@ -17,12 +17,11 @@ const Contact = () => {
       return toast.error("Please provide all fields");
     }
     try {
-      const res = await axios.post("/api/v1/portfolio/sendEmail", {
-        name,
-        email,
-        msg,
-      });
-
+      const res = await axios.post(
+        `${process.env.REACT_APP_API_URL}/api/v1/portfolio/sendEmail`,
+        { name, email, msg }
+      );
+      
       if (res.data.success) {
         toast.success(res.data.message);
         setName("");
