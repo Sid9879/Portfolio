@@ -4,7 +4,8 @@ import { useTheme } from "../../context/ThemeContext";
 import Typewriter from "typewriter-effect";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import "./home.css";
-import Resume from "../../assets/docs/Resume.pdf";
+// import Resume from "../../assets/docs/Resume.pdf";
+import Siddharth_MERNStack_developer from '../../assets/docs/Siddharth_MERNStack_developer.pdf'
 
 const Home = () => {
   const [theme, setTheme] = useTheme();
@@ -70,7 +71,7 @@ const Home = () => {
             >
               Hire Me
             </a>
-            <a className="btn btn-cv" href={Resume} download="Resume.pdf">
+            <a className="btn btn-cv" href={Siddharth_MERNStack_developer} download="Siddharth_MERNStack_developer.pdf">
               My Resume
             </a>
           </motion.div>
