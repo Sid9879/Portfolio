@@ -15,14 +15,14 @@ const Contact = () => {
   // Handle submit button
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("API URL:", API_URL);
+    // console.log("API URL:", API_URL);
 
     if (!name || !email || !msg) {
       return toast.error("Please provide all fields");
     }
     try {
       const res = await axios.post(
-        `${API_URL}/api/v1/portfolio/sendEmail`,
+        `https://portfolio-backend-1r39.onrender.com/api/v1/portfolio/sendEmail`,
         { name, email, msg }
       );
       
