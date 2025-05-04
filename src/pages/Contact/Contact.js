@@ -25,7 +25,7 @@ const Contact = () => {
         `https://portfolio-backend-1r39.onrender.com/api/v1/portfolio/sendEmail`,
         { name, email, msg }
       );
-      
+      // console.log(res.data)
       if (res.data.success) {
         toast.success(res.data.message);
         setName("");
@@ -36,7 +36,7 @@ const Contact = () => {
       }
     } catch (error) {
       console.error(error);
-      toast.error("Something went wrong!");
+      toast.error(error.response?.data?.message||"Something went wrong!");
     }
   };
 

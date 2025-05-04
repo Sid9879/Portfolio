@@ -4,6 +4,7 @@ import "./Projects.css";
 import download from "../../assets/docs/download.png";
 import ecom from "../../assets/docs/ecom.png";
 import downloadexpense from "../../assets/docs/downloadexpense.png";
+import sale from '../../assets/docs/sale.png'
 
 const Projects = () => {
   return (
@@ -46,7 +47,8 @@ const Projects = () => {
           {[ 
             { img: download, title: "BlogPage Website", link: "https://blog-app-frontend-five-rho.vercel.app/login" },
             { img: ecom, title: "ECommerce Website", link: "https://om-frontend.vercel.app/login" },
-            { img: downloadexpense, title: "Expense Tracker", link: "#" } // Update link when available
+            { img: sale, title: "Sale Report", link: "https://sale-report-frontend.vercel.app/login" },
+            { img: downloadexpense, title: "Expense Tracker", link: "https://expense-mu-beige.vercel.app/login" } // Update link when available
           ].map((project, index) => (
             <motion.div
               key={index}
