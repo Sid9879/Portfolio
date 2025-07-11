@@ -11,15 +11,17 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+    const [loading, setLoading] = useState(false);
 
   // Handle submit button
   const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log("API URL:", API_URL);
-
+    
     if (!name || !email || !msg) {
       return toast.error("Please provide all fields");
     }
+    setLoading(true);
     try {
       const res = await axios.post(
         `https://portfolio-backend-1r39.onrender.com/api/v1/portfolio/sendEmail`,
@@ -37,6 +39,9 @@ const Contact = () => {
     } catch (error) {
       console.error(error);
       toast.error(error.response?.data?.message||"Something went wrong!");
+    }
+    finally {
+      setLoading(false);
     }
   };
 
@@ -99,6 +104,7 @@ const Contact = () => {
                     className="mb-3"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                     disabled={loading}
                   />
                 </div>
                 <div className="row px-3">
@@ -109,6 +115,7 @@ const Contact = () => {
                     className="mb-3"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                     disabled={loading}
                   />
                 </div>
                 <div className="row px-3">
@@ -119,6 +126,7 @@ const Contact = () => {
                     className="mb-3"
                     value={msg}
                     onChange={(e) => setMsg(e.target.value)}
+                     disabled={loading}
                   />
                 </div>
                 <div className="row px-3">
@@ -127,8 +135,9 @@ const Contact = () => {
                     whileTap={{ scale: 0.9 }}
                     className="button"
                     onClick={handleSubmit}
+                    disabled={loading} 
                   >
-                    SEND MESSAGE
+                   {loading ? "SENDING..." : "SEND MESSAGE"}
                   </motion.button>
                 </div>
               </div>
