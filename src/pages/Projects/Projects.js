@@ -47,9 +47,9 @@ const Projects = () => {
         <div className="row" id="ads">
           {[ 
             { img: download, title: "BlogPage Website", link: "https://blog-app-frontend-five-rho.vercel.app/login" },
-            { img: ecom, title: "ECommerce Website", link: "https://om-frontend.vercel.app/login" },
-            { img: sale, title: "Sale Report", link: "https://sale-report-frontend.vercel.app/login" },
              { img:quickhirehub, title: "Freelancing Website", link: "https://quick-hire-hub.vercel.app/login" },
+             { img: sale, title: "Sale Report", link: "https://sale-report-frontend.vercel.app/login" },
+            { img: ecom, title: "ECommerce Website", link: "https://om-frontend.vercel.app/login" },
             { img: downloadexpense, title: "Expense Tracker", link: "https://expense-mu-beige.vercel.app/login" },
              // Update link when available
           ].map((project, index) => (
