@@ -5,6 +5,7 @@ import download from "../../assets/docs/download.png";
 import ecom from "../../assets/docs/ecom.png";
 import downloadexpense from "../../assets/docs/downloadexpense.png";
 import sale from '../../assets/docs/sale.png'
+import quickhirehub from "../../assets/docs/quickhirehub.png";
 
 const Projects = () => {
   return (
@@ -48,7 +49,9 @@ const Projects = () => {
             { img: download, title: "BlogPage Website", link: "https://blog-app-frontend-five-rho.vercel.app/login" },
             { img: ecom, title: "ECommerce Website", link: "https://om-frontend.vercel.app/login" },
             { img: sale, title: "Sale Report", link: "https://sale-report-frontend.vercel.app/login" },
-            { img: downloadexpense, title: "Expense Tracker", link: "https://expense-mu-beige.vercel.app/login" } // Update link when available
+             { img:quickhirehub, title: "Freelancing Website", link: "https://quick-hire-hub.vercel.app/login" },
+            { img: downloadexpense, title: "Expense Tracker", link: "https://expense-mu-beige.vercel.app/login" },
+             // Update link when available
           ].map((project, index) => (
             <motion.div
               key={index}
@@ -58,7 +61,7 @@ const Projects = () => {
               transition={{ duration: 0.7, delay: 0.3 * index }}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="card rounded">
+              <div className="card rounded mb-4">
                 <div className="card-image">
                   <span className="card-notify-badge">Full Stack</span>
                   <img src={project.img} alt={`project${index + 1}`} />
