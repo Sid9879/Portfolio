@@ -48,7 +48,7 @@ const About = () => {
             <br />
             <strong>Backend:</strong> Node.js, Express.js, MongoDB, Socket.IO
             <br />
-            <strong>Authentication:</strong> JWT, Google OAuth, reCAPTCHA
+            <strong>Authentication:</strong> JWT, Google OAuth 2.0, CAPTCHA (bot protection), Session & Cookies, Password Hashing (bcrypt), Role-Based Access Control (RBAC)
             <br />
             <strong>Other Skills:</strong> REST APIs, WebSockets, Cloud Deployment (AWS, Vercel)
           </motion.p>
