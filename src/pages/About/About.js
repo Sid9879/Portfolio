@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./About.css";
-import mypic from "../../assets/docs/mypic.png";
+import profile from "../../assets/docs/profile.jpg";
+
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
       <div className="row">
         <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
           <motion.img
-            src={mypic}
+            src={profile}
             alt="profile_pic"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}

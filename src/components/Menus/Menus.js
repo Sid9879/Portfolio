@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Menus.css";
 import { Link } from "react-scroll";
-import profile from "../../assets/docs/profile.png";
+import profile from "../../assets/docs/profile.jpg";
 import {
   FcAbout,
   FcBiotech,
