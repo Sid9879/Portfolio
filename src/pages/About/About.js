@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import "./About.css";
 import profile from "../../assets/docs/profile.jpg";
 
-
 const About = () => {
   return (
     <motion.div
